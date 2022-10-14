@@ -1,0 +1,54 @@
+body{
+    width: 100%;
+    height: 100%;
+}
+.loader{
+    padding-left: 10px;
+    background-color:rgba(153, 21, 47);
+    border:10px solid #CD3F5B;;
+    border-left-color: rgb(226, 240, 247);
+    border-radius: 50px;
+    width: 10px;
+    height: 20px;
+    animation: sampath 1s linear infinite;
+
+}
+@keyframes sampath {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.sbutton .loader *{
+    display: none;
+}
+.center{
+    width:100%;
+    height:600px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.sbutton{
+    cursor: pointer;
+    display:flex;
+    justify-content: center;
+    background-color:rgba(153, 21, 47);
+    align-items: center;
+    position:absolute;
+    height: 70px;
+    width: 300px;
+    border-radius: 50px;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+h3{
+    color: white;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+.sbutton:hover{
+    width: 310px;
+}
